@@ -1,0 +1,46 @@
+<!-- 단축키 - ! 치고 엔터 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to KoKoaTalk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar_column">
+        <span>Good Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar_column">
+        <span>12:41</span>
+      </div>
+      <div class="status-bar_column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header_title">Welcome to KoKoa Clone</h1>
+      <p class="welcome-header_text">
+        코코아 계정이 있으신 경우,<br />
+        이메일 또는 휴대폰 번호로 로그인해주세요
+      </p>
+    </header>
+    <form action="friends.html" method="get" id="login-form">
+      <!-- method는 post나 get 방식. Post가 백엔드 서버에 주는 방식임. 지금은 서버가 없으니 get으로 하지만 post로 하는게 안전함 -->
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find KoKoa Account or Password</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/22d3239101.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

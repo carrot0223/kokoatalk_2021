@@ -1,0 +1,42 @@
+.nav {
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  /* border-box를 안하면 아이콘이 padding 땜에 밀려서 안보임. 패딩에도 불구하고 width를 유지시켜주는 것 */
+}
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_link {
+  /* reset.css에서 링크의 모든 속성 없앴음 */
+  color: #2f363e;
+  position: relative;
+}
+.nav_notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+.nav_notification2 {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  left: 35px;
+  bottom: 25px;
+}
+.nav_notification3 {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+}
