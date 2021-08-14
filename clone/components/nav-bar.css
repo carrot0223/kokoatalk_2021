@@ -21,6 +21,7 @@
   position: absolute;
   left: 15px;
   bottom: 15px;
+  animation: notification 2s ease-in-out infinite;
 }
 .nav_notification2 {
   background-color: tomato;
@@ -39,4 +40,44 @@
   position: absolute;
   left: 25px;
   bottom: 20px;
+}
+
+/* 추가로 애니메이션을 넣어보자 */
+@keyframes notification {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(30deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes appearbtn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav_btn {
+  transform: translateY(70px);
+  animation: appearbtn 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+.nav_btn:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.nav_btn:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.nav_btn:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.nav_btn:last-child {
+  animation-delay: 0.4s;
 }
